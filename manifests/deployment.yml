@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: lexorodemopipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: lexorodemopipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: lexorodemopipelinesjavascriptdocker 
+          image: lexoroacr.azurecr.io/lexorodemopipelinesjavascriptdocker 
+          ports:
+          - containerPort: 8080
